@@ -13,7 +13,7 @@ class Product extends Model
     use HasFactory;
 
     // Propriétés qui peuvent être assignées en masse
-    protected $fillable = ['name', 'description', 'price', 'category_id', 'active'];
+    protected $fillable = ['name', 'slug', 'description', 'price', 'stock', 'category_id', 'active', 'image'];
 
     // Cast des attributs pour les convertir automatiquement
     protected $casts = [
