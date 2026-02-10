@@ -17,7 +17,7 @@ class ProductController extends Controller
         ['id' => 4, 'name' => 'Hoodie Laravel', 'price' => 60],
         ['id' => 5, 'name' => 'Livre Laravel', 'price' => 45],
     ];
-
+    $products = Product::all();
     return view('products.index', compact('products'));
 }
 
