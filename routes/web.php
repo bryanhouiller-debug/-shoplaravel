@@ -17,3 +17,5 @@ Route::get('/about', [PageController::class, 'about'])->name('about');
 
 Route::get('/products/{id}', [ProductController::class, 'show'])
     ->name('products.show');
+
+Route::resource('products', ProductController::class);
